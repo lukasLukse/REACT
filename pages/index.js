@@ -5,12 +5,18 @@ import Main from "../components/Main/Main";
 import Footer from "../components/Footer/Footer";
 
 const MainPage = () => {
-  const [name, setName] = useState("FEUA-15");
+  const [isDisplayLogo, setDisplayLogo] = useState(false);
+
+  const toggleDisplayLogo = () => {
+    setDisplayLogo((prevState) => !prevState);
+  };
 
   return (
     <>
-      {name}
-      <Header />
+      <button onClick={toggleDisplayLogo}>
+        {isDisplayLogo ? "Hide Logo" : "Show Logo"}
+      </button>
+      <Header isDisplayLogo={isDisplayLogo} />
       <Main />
       <Footer />
     </>

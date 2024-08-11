@@ -23,10 +23,8 @@ const Articles = () => {
   return (
     <div className={styles.main}>
       <Article title={articles[0].title} imgUrl={articles[0].imgUrl} />
-      ;
       <Article title={articles[1].title} imgUrl={articles[1].imgUrl} />
-      ;
-      <Article title={articles[2].title} imgUrl={articles[2].imgUrl} />;
+      <Article title={articles[2].title} imgUrl={articles[2].imgUrl} />
     </div>
   );
 };
