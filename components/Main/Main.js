@@ -1,11 +1,12 @@
 import styles from "./styles.module.css";
 import Articles from "../Articles/Articles";
 import Questions from "../Questions/Questions";
+import DressWrapper from "../DressWrapper/DressWrapper";
 
-const Main = () => {
+const Main = ({ dress }) => {
   return (
     <main className={styles.main}>
-      <Questions />
+      <DressWrapper dress={dress} />
     </main>
   );
 };
